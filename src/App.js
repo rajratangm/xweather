@@ -5,12 +5,13 @@ const WeatherApp = () => {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState([]);
   const [loading, setLoading] = useState(false);
+  const API_KEY = "1fa9ff4126d95b8db54f3897a208e91c";
 
   const fetchWeatherData = async () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=YOUR_API_KEY&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={API_KEY}&units=metric`
       );
       if (!response.ok) {
         throw new Error("Failed to fetch weather data");
