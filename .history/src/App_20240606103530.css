@@ -1,0 +1,19 @@
+
+
+.weather-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust height based on your requirement */
+}
+
+.weather-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-card {
+  margin: 10px;
+}
